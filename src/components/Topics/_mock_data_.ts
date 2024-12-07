@@ -77,38 +77,5 @@ export const sampleTopics: Post[] = [
     readCount: 184,
     voteCount: 45,
     comments: []
-  },
-  {
-    id: 8,
-    title: "Managing Work-Life Balance",
-    content: "Balancing work with personal life can be tough. How do you manage it? Share your experiences and tips!",
-    author: "Noah Kim",
-    postTime: "2024-10-15T10:05:00Z",
-    tags: ["Work-Life Balance", "Time Management", "Wellness"],
-    readCount: 198,
-    voteCount: 52,
-    comments: []
-  },
-  {
-    id: 9,
-    title: "Networking Tips for Internal Connections",
-    content: "Building connections within the company can be challenging. How do you go about networking internally?",
-    author: "Isabella Chen",
-    postTime: "2024-10-14T11:49:00Z",
-    tags: ["Networking", "Connections", "Internal Communication"],
-    readCount: 160,
-    voteCount: 38,
-    comments: []
-  },
-  {
-    id: 10,
-    title: "Recognition and Celebrations",
-    content: "This space is for celebrating wins! Share your recent accomplishments, or recognize a colleague who’s made an impact.",
-    author: "James Anderson",
-    postTime: "2024-10-12T18:30:00Z",
-    tags: ["Recognition", "Celebration", "Team Success"],
-    readCount: 145,
-    voteCount: 40,
-    comments: []
   }
 ];

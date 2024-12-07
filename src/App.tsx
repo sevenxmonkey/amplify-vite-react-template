@@ -2,12 +2,13 @@ import { BrowserRouter, Route, Routes } from 'react-router';
 import { defaultDarkModeOverride, ThemeProvider } from '@aws-amplify/ui-react';
 
 import Auth from './components/Auth';
-import User from "./components/User";
 
 import './App.scss';
 import AppHeader from './components/AppHeader';
 import AppFooter from './components/AppFooter';
 import Topics from './components/Topics';
+import Network from './components/Network';
+import Profile from './components/Profile';
 
 function App() {
 
@@ -18,29 +19,30 @@ function App() {
 
   return (
     <ThemeProvider theme={theme} colorMode="system">
-      <div className="app-layout">
-        <div className="header-wrapper">
-          <div className='header'>
-            <AppHeader />
+      <BrowserRouter>
+        <div className="app-layout">
+          <div className="header-wrapper">
+            <div className='header'>
+              <AppHeader />
+            </div>
           </div>
-        </div>
-        <div className="body-wrapper">
-          <div className='body'>
-            <BrowserRouter>
+          <div className="body-wrapper">
+            <div className='body'>
               <Routes>
                 <Route path="/" element={<Topics />} />
                 <Route path="auth" element={<Auth />} />
-                <Route path="user" element={<User />} />
+                <Route path="user" element={<Profile />} />
+                <Route path="network" element={<Network />} />
               </Routes>
-            </BrowserRouter>
+            </div>
+          </div>
+          <div className="footer-wrapper">
+            <div className='footer'>
+              <AppFooter />
+            </div>
           </div>
         </div>
-        <div className="footer-wrapper">
-          <div className='footer'>
-            <AppFooter />
-          </div>
-        </div>
-      </div>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

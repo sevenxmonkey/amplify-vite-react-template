@@ -51,4 +51,19 @@ code {
   .body {
     min-height: calc(100vh - 160px);
   }
+
+  .primary-btn {
+    margin-top: 8px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background: hsl(190, 70%, 70%);
+    color: #000;
+    border: none;
+
+    cursor: pointer;
+
+    &:hover{
+      background: hsla(190, 70%, 70%, 0.762);
+    }
+  }
 }

@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: flex-end;
 
+
   .title {
     max-width: 50%;
 
@@ -11,7 +12,7 @@
       cursor: pointer;
 
       &:hover {
-        color: lightgreen;
+        color: hsl(190, 70%, 70%);
       }
     }
 
@@ -20,22 +21,22 @@
     }
   }
 
-  .menu {
-    button {
-      width: 100px;
-      height: 30px;
-      background-color: black;
-      color: white;
-      border: none;
+  .log-in {
+    position: relative;
+    bottom: 10px;
 
-      &.active {
-        border-bottom: 3px solid hsl(190, 70%, 70%);;
-      }
+    .user{
+      text-align: right;
 
-      &:hover {
-        background-color: hsla(190, 70%, 70%, 0.5);;
+      .link {
         cursor: pointer;
+    
+        &:hover {
+          color: orange;
+        }
       }
     }
   }
+
+  
 }
