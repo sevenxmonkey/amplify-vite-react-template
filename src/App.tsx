@@ -1,7 +1,10 @@
-import Home from "./components/Home";
 import { BrowserRouter, Route, Routes } from 'react-router';
+
+import Home from "./components/Home";
 import Auth from './components/Auth';
 import User from "./components/User";
+
+import './App.scss';
 
 function App() {
 
