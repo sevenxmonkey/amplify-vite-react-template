@@ -14,3 +14,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app-layout {
+  .header-wrapper {
+    max-height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    border-bottom: 2px solid hsl(190, 70%, 70%);
+    z-index: 2;
+  }
+
+  .body-wrapper,
+  .footer-wrapper {
+    position: relative;
+    top: 80px;
+  }
+
+  .footer-wrapper {
+    background-color: black;
+    border-top: 2px solid hsl(190, 70%, 70%);
+  }
+
+  .body,
+  .header,
+  .footer {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .footer {
+    height: 50px;
+  }
+
+  .body {
+    min-height: calc(100vh - 160px);
+  }
+}

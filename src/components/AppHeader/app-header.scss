@@ -1,0 +1,41 @@
+.app-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .title {
+    max-width: 50%;
+
+    .main-title {
+      margin: 10px 0;
+      cursor: pointer;
+
+      &:hover {
+        color: lightgreen;
+      }
+    }
+
+    .sub-title {
+      margin: 5px 0;
+    }
+  }
+
+  .menu {
+    button {
+      width: 100px;
+      height: 30px;
+      background-color: black;
+      color: white;
+      border: none;
+
+      &.active {
+        border-bottom: 3px solid hsl(190, 70%, 70%);;
+      }
+
+      &:hover {
+        background-color: hsla(190, 70%, 70%, 0.5);;
+        cursor: pointer;
+      }
+    }
+  }
+}
