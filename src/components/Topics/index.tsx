@@ -49,7 +49,10 @@ const Topics = (): JSX.Element => {
   return (
     <div className="posts-list" style={{ padding: "50px 0 10px 0" }}>
       <div className="top">
-        <button className="primary-btn create" >
+        <button
+          className="primary-btn create"
+          onClick={() => navigate('/edit')}
+        >
           <i className="material-icons">edit</i><b>Write a topic</b>
         </button>
         <button

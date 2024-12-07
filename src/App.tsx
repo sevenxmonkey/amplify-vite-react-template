@@ -9,6 +9,7 @@ import AppFooter from './components/AppFooter';
 import Topics from './components/Topics';
 import Network from './components/Network';
 import Profile from './components/Profile';
+import Edit from './components/Edit';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
                 <Route path="auth" element={<Auth />} />
                 <Route path="user" element={<Profile />} />
                 <Route path="network" element={<Network />} />
+                <Route path="edit" element={<Edit />} />
               </Routes>
             </div>
           </div>
